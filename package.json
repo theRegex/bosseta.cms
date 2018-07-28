@@ -1,0 +1,64 @@
+{
+  "name": "bosseta",
+  "version": "1.0.0",
+  "description": "Bosseta Content Management System",
+  "main": "server.js",
+  "scripts": {
+    "dev": "set NODE_ENV=development&& concurrently \"nodemon server\" \"webpack --color --bail\"",
+    "prod": "set NODE_ENV=production&& webpack --color --bail"
+  },
+  "author": "Keinan Pace",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "html-webpack-plugin": "^3.2.0",
+    "js-sha1": "^0.6.0",
+    "sha1": "^1.1.1",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "concurrently": "^3.6.0",
+    "es6-promise": "^4.2.4",
+    "eslint": "^4.19.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-react": "^7.9.1",
+    "express": "^4.16.3",
+    "express-asset-versions": "^0.1.2",
+    "express-handlebars": "^3.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "firebase": "^5.3.0",
+    "jade": "^1.11.0",
+    "moment": "^2.22.2",
+    "nodemon": "^1.18.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-hot-loader": "^4.0.0",
+    "react-loadable": "^5.4.0",
+    "react-router-dom": "^4.3.1",
+    "webpack": "^4.16.2",
+    "webpack-build-notifier": "^0.1.27",
+    "webpack-cli": "^2.1.5",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-merge": "^4.1.3"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react",
+      "stage-2"
+    ]
+  }
+}
