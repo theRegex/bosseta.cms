@@ -7,6 +7,10 @@
     "dev": "set NODE_ENV=development&& concurrently \"nodemon server\" \"webpack --color --bail\"",
     "prod": "set NODE_ENV=production&& webpack --color --bail"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theRegex/bosseta.cms.git"
+  },
   "author": "Keinan Pace",
   "license": "ISC",
   "dependencies": {
