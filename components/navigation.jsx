@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { NavLink  } from 'react-router-dom';
 
 
 	 export default class Navigation extends React.Component{
@@ -13,13 +13,13 @@ import { Link } from 'react-router-dom';
 				 Navigation
 			  </h5>
 			  <ul className="navList">
-				<li className="navItem"><i className="fas fa-box"></i><Link to="/products">Create Product</Link></li>
-				 <li className="navItem"><i className="fas fa-grip-horizontal"></i><Link to="/categories">Create Category</Link></li>
-				 <li className="navItem"><i className="fas fa-th-list"></i><Link to="/collections">Create Collection</Link></li>
-				 <li className="navItem"><i className="fas fa-clipboard-list"></i><Link to="/">Manage Products</Link></li>
-				 <li className="navItem"><i className="fas fa-folder-open"></i><Link to="/orders">Manage Orders</Link></li>
-				 <li className="navItem"><i className="fas fa-truck-moving"></i><Link to="/tracking">Track Order</Link></li>
-				<li className="navItem"><i className="fas fa-cog"></i><Link to="/settings">Settings</Link></li>
+				<li><NavLink className="navItem" activeClassName='selected' to="/products"><i className="fas fa-box"></i>Create Product</NavLink></li>
+				 <li><NavLink className="navItem" activeClassName='selected' to="/categories"><i className="fas fa-grip-horizontal"></i>Create Category</NavLink></li>
+				 <li><NavLink className="navItem" activeClassName='selected' to="/collections"><i className="fas fa-th-list"></i>Create Collection</NavLink></li>
+				 <li><NavLink exact={true} className="navItem" activeClassName='selected' to="/"><i className="fas fa-clipboard-list"></i>Manage Products</NavLink></li>
+				 <li><NavLink className="navItem" activeClassName='selected' to="/orders"><i className="fas fa-folder-open"></i>Manage Orders</NavLink></li>
+				 <li><NavLink className="navItem" activeClassName='selected' to="/tracking"><i className="fas fa-truck-moving"></i>Track Order</NavLink></li>
+				<li><NavLink className="navItem" activeClassName='selected' to="/settings"><i className="fas fa-cog"></i>Settings</NavLink></li>
 			  </ul>
 			</div>
 		  </div>

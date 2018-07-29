@@ -18,7 +18,6 @@ import Layout from "./pages/layout";
 //import Header from "components/header";
 // Need to add authentication to routing!!
 const Root = (
-      
             <BrowserRouter>
                     <Layout>
                     <Switch>

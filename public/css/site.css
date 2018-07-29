@@ -40,26 +40,33 @@ body{
   padding-left:40px;
   margin-top:20px;
 }
-
+.navList li{
+  margin-top:30px;
+  cursor:pointer;
+}
 .navItem i {
   margin-right:7px;
 }
+
+
 .navItem{
-    margin-top:30px;
     color:#ffffff;
     opacity:.5;
     font-size:18px;
-    cursor:pointer;
+}
+
+.navItem.selected{
+  font-weight:bolder;
+  opacity:1;
 }
 
 .navItem:hover{
     font-weight:bolder;
     opacity:1;
 }
-.navItem.selected{
-    font-weight:bolder;
-  opacity:1;
-}
+
+
+
 .body_wrap{
   position:relative;
   margin-left:310px;

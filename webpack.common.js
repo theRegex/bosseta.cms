@@ -1,9 +1,6 @@
  "use strict"
 const path = require("path");
-const webpack = require("webpack");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin")
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const buildWillWatch = !(process.env.NODE_ENV === "production");
 
@@ -31,15 +28,20 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use:  ExtractTextPlugin.extract({
-                    fallback: "style-loader?sourceMap",
-                    use: "css-loader?modules,localIdentName='\[name]-[local]-[\hash\:base64:6]'"
-                })
-            }
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    { 
+                        loader: 'css-loader', 
+                        options: { url: false, sourceMap: true } 
+                    }
+                ],
+            },
         ]
     },
     plugins: [
-        new ExtractTextPlugin(path.resolve(__dirname + "./public/css/bundle.css"))
+        new MiniCssExtractPlugin({
+            filename: "../css/build.css",
+        })
     ],
     resolve: {
         extensions: ["*", ".js",".jsx"],

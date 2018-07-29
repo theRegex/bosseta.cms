@@ -16,6 +16,7 @@
     ],
     "plugins": [ "react" ],
     "globals": {
+      "module":false,
       "import":false,
       "exports": false,
       "console": false,
