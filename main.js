@@ -5,7 +5,6 @@ import { BrowserRouter, Route, Switch  } from "react-router-dom";
 //Pages
 import CreatProduct from "pages/create.product";
 import CreatCategories from "pages/create.categories";
-import CreateCollections from "pages/create.collections";
 import ManageOrders from "pages/manage.orders";
 import ManageProducts from "pages/manage.products";
 import Tracking from "pages/tracking";
@@ -25,7 +24,6 @@ const Root = (
                             <Route exact={true} path="/orders" component={ManageOrders} />
                             <Route exact={true} path="/products" component={CreatProduct} />
                             <Route exact={true} path="/categories" component={CreatCategories} />
-                            <Route exact={true} path="/collections" component={CreateCollections} />
                             <Route exact={true} path="/tracking" component={Tracking} />
                             <Route exact={true} path="/login" component={Login} />
                             <Route exact={true} path="/settings" component={Settings} />

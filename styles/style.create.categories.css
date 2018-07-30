@@ -1,0 +1,15 @@
+.bss-dropdown{
+    position:relative;
+    background-color:#ffffff;
+    padding: 20px;
+    border:1px solid rgba(112,112,112,41%);
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.19), 0 2px 3px rgba(0,0,0,0.13);
+}
+
+.cat-del-link{
+    font-weight: bold;
+    color: #3498db;
+    cursor: pointer;
+    user-select: none;
+}

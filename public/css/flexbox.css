@@ -22,12 +22,25 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+  vertical-align: baseline;
+  box-sizing: border-box;
 }
+
+input,select,textarea{
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: #717171 !important; 
+  letter-spacing: .1em;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
+}
+
+button{
+  cursor: pointer;
 }
 body {
 	line-height: 1;
