@@ -66,8 +66,6 @@ import "styles/style.colors.css";
 
 			this.setState({
 				collections : collectionList
-			},()=>{
-				console.log(this.state)
 			});
 		}
 
